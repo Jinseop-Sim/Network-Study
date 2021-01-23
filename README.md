@@ -1,2 +1,2 @@
-# <p align="center">Network-Study</p>
+# <p align="center">Network Study</p>
 ---
