@@ -1,7 +1,9 @@
 # Layered Architecture
 ---
 ## Layered Architecture  
->
+>네트워크는 각각 독립적인 계층 구조로 존재한다.  
+
+![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)
 ## What is OSI 7 Layer?
 >OSI 7 Layer은, Open System Interconnection Reference Model의 줄임말로,  
 우리가 사용하는 네트워크의 구성을 7개의 계층으로 모듈화(표준화) 시켜 놓은 것을 말한다.
