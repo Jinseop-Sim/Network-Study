@@ -1,5 +1,7 @@
-# OSI 7 Layer
+# Layered Architecture
 ---
+## Layered Architecture  
+>
 ## What is OSI 7 Layer?
 >OSI 7 Layer은, Open System Interconnection Reference Model의 줄임말로,  
 우리가 사용하는 네트워크의 구성을 7개의 계층으로 모듈화(표준화) 시켜 놓은 것을 말한다.
