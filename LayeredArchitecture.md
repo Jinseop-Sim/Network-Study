@@ -7,16 +7,16 @@
 
 ![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)  
 
-## Layered Protocol Architecture
+### Layered Protocol Architecture
 >- 위에서 본 각 Layer들이 일을 하기 위해서는 통신할 대상이 있어야 하는데, 그 대상을 __Peer Layer__ 이라고 칭한다.
 >- 이 때 여러개의 __Peer Layer__ 들 끼리 여러개의 __Protocol__ 을 가지고 동작을 하는 구조를 우리는 _Layered Protocol Architecture_ 이라고 한다.  
 
-## Elements of Protocol
+### Elements of Protocol
 - Syntax : 문법적인 요소, 메세지의 형식을 의미한다.(txt, bin, ...)
 - Semantic : 의미적인 요소, 일의 처리 방식과 에러의 처리 방식을 의미한다.
 - Timing : 시간적인 요소, 일을 처리할 순서 및 __Synchronization(동기화)__ 에 대한 요소이다.  
 
-## Protocol Data Unit(PDU)
+### Protocol Data Unit(PDU)
 - Protocol Data Unit(PDU) : PCI와 SDU가 합쳐진 데이터
 - Protocol Control Information : 헤더의 역할, 제어 정보를 담고있는 머리 부분이다.
 - Service Data Unit : 프로토콜이 서비스를 제공할 대상, 수신자.  
@@ -25,7 +25,7 @@
 >이렇게 높은 계층에서부터 헤더가 앞에 하나씩 붙게 된다.  
 즉, 제일 낮은 계층이 제일 앞에 붙어있게 된다.  
 
-## Standard Protocol
+### Standard Protocol
 - Why Standard Protocol is needed? : 장비들과의 소통이 무조건 요구되며, 통일된 규약이 필요하다. 따라서 판매자들이 더욱 marketable한 상품을 만들 수 있게 된다.
 - De Facto Standard : 보통 통상적으로 사용하는 __Standard Protocol__ 으로, __TCP/IP의 Protocol Suite__ 가 이에 해당한다. (미국에서 많이 사용)
 - De Jure Standard : 명목적인, 법률로 제정하여 기준을 잡아놓은 것으로, __OSI Reference Model__ 이 이에 해당하며, ISO에서 제정한다. (유럽, 중국 등이 사용)  
