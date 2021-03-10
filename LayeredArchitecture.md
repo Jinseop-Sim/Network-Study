@@ -1,15 +1,15 @@
 # Layered Architecture
 ---
 ## Layered Architecture  
->- 네트워크는 서로 영향을 끼치지 않는 각각의 독립적인 계층 구조로 존재한다.  
->- 각 층은 반드시 한 단계 아래층만의 정보를 받아서 행동한다.  
->- 각 층은 반드시 한 단계 위층으로만 정보를 제공한다.  
+- 네트워크는 서로 영향을 끼치지 않는 각각의 독립적인 계층 구조로 존재한다.  
+- 각 층은 반드시 한 단계 아래층만의 정보를 받아서 행동한다.  
+- 각 층은 반드시 한 단계 위층으로만 정보를 제공한다.  
 
 ![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)  
 
 ### Layered Protocol Architecture
->- 위에서 본 각 Layer들이 일을 하기 위해서는 통신할 대상이 있어야 하는데, 그 대상을 __Peer Layer__ 이라고 칭한다.
->- 이 때 여러개의 __Peer Layer__ 들 끼리 여러개의 __Protocol__ 을 가지고 동작을 하는 구조를 우리는 _Layered Protocol Architecture_ 이라고 한다.  
+- 위에서 본 각 Layer들이 일을 하기 위해서는 통신할 대상이 있어야 하는데, 그 대상을 __Peer Layer__ 이라고 칭한다.
+- 이 때 여러개의 __Peer Layer__ 들 끼리 여러개의 __Protocol__ 을 가지고 동작을 하는 구조를 우리는 _Layered Protocol Architecture_ 이라고 한다.  
 
 ### Elements of Protocol
 - Syntax : 문법적인 요소, 메세지의 형식을 의미한다.(txt, bin, ...)
