@@ -77,6 +77,7 @@ __TCP/UDP__ 가 이 계층에 속한다.
 
 ### Application Layer
 >파일 전송, 원격 접속, 전자 거래, 메시지 처리 및 교환 등의 실제 사용하는 기능들을 담당하는 계층이다.  
+
 ![Heleeo](https://user-images.githubusercontent.com/71700079/110627684-9d362f80-81e5-11eb-9a40-0a5c31f2f516.png)  
 
 ## Difference between OSI Layers and TCP/IP  
