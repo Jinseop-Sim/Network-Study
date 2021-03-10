@@ -3,7 +3,8 @@
 ## Layered Architecture  
 >- 네트워크는 서로 영향을 끼치지 않는 각각의 독립적인 계층 구조로 존재한다.  
 >- 각 층은 반드시 한 단계 아래층만의 정보를 받아서 행동한다.  
->- 각 층은 반드시 한 단계 위층으로만 정보를 제공한다.
+>- 각 층은 반드시 한 단계 위층으로만 정보를 제공한다.  
+
 ![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)  
 
 ## Layered Protocol Architecture
@@ -66,7 +67,7 @@ __Internet Protocol__ , 즉 __IP__ 가 이 계층에 속한다.
 
 ### Transport Layer
 >종단(End System) 간의 데이터 교환을 담당한다. 접속 관리 및 오류 제어 담당.  
-TCP 나 UDP가 이 계층에 속한다.  
+__TCP/UDP__ 가 이 계층에 속한다.  
 
 ### Session Layer
 >쉽게 생각하면, 채팅방을 생각하면 된다. 같은 세션끼리 연결하여 통신하는 것.  
@@ -76,5 +77,7 @@ TCP 나 UDP가 이 계층에 속한다.
 
 ### Application Layer
 >파일 전송, 원격 접속, 전자 거래, 메시지 처리 및 교환 등의 실제 사용하는 기능들을 담당하는 계층이다.  
+![Heleeo](https://user-images.githubusercontent.com/71700079/110627684-9d362f80-81e5-11eb-9a40-0a5c31f2f516.png)  
 
-![Heleeo](https://user-images.githubusercontent.com/71700079/110627684-9d362f80-81e5-11eb-9a40-0a5c31f2f516.png)
+## Difference between OSI Layers and TCP/IP  
+![TCP](https://user-images.githubusercontent.com/71700079/110628521-72001000-81e6-11eb-9388-c0519178cb3a.PNG)
