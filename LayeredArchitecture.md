@@ -1,12 +1,38 @@
 # Layered Architecture
 ---
 ## Layered Architecture  
->네트워크는 각각 독립적인 계층 구조로 존재한다.  
+>- 네트워크는 서로 영향을 끼치지 않는 각각의 독립적인 계층 구조로 존재한다.  
+>- 각 층은 반드시 한 단계 아래층만의 정보를 받아서 행동한다.  
+>- 각 층은 반드시 한 단계 위층으로만 정보를 제공한다.
+![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)  
 
-![LAP](https://user-images.githubusercontent.com/71700079/110340397-8fa96a00-806c-11eb-8284-9373175e5774.png)
+## Layered Protocol Architecture
+>- 위에서 본 각 Layer들이 일을 하기 위해서는 통신할 대상이 있어야 하는데, 그 대상을 __Peer Layer__ 이라고 칭한다.
+>- 이 때 여러개의 __Peer Layer__ 들 끼리 여러개의 __Protocol__ 을 가지고 동작을 하는 구조를 우리는 _Layered Protocol Architecture_ 이라고 한다.  
+
+## Elements of Protocol
+- Syntax : 문법적인 요소, 메세지의 형식을 의미한다.(txt, bin, ...)
+- Semantic : 의미적인 요소, 일의 처리 방식과 에러의 처리 방식을 의미한다.
+- Timing : 시간적인 요소, 일을 처리할 순서 및 __Synchronization(동기화)__ 에 대한 요소이다.  
+
+## Protocol Data Unit(PDU)
+- Protocol Data Unit(PDU) : PCI와 SDU가 합쳐진 데이터
+- Protocol Control Information : 헤더의 역할, 제어 정보를 담고있는 머리 부분이다.
+- Service Data Unit : 프로토콜이 서비스를 제공할 대상, 수신자.  
+![제목 없음](https://user-images.githubusercontent.com/71700079/110626438-103ea680-81e4-11eb-80aa-31ca5988a763.png)  
+
+>이렇게 높은 계층에서부터 헤더가 앞에 하나씩 붙게 된다.  
+즉, 제일 낮은 계층이 제일 앞에 붙어있게 된다.  
+
+## Standard Protocol
+- Why Standard Protocol is needed? : 장비들과의 소통이 무조건 요구되며, 통일된 규약이 필요하다. 따라서 판매자들이 더욱 marketable한 상품을 만들 수 있게 된다.
+- De Facto Standard : 보통 통상적으로 사용하는 __Standard Protocol__ 으로, __TCP/IP의 Protocol Suite__ 가 이에 해당한다. (미국에서 많이 사용)
+- De Jure Standard : 명목적인, 법률로 제정하여 기준을 잡아놓은 것으로, __OSI Reference Model__ 이 이에 해당하며, ISO에서 제정한다. (유럽, 중국 등이 사용)  
+
 ## What is OSI 7 Layer?
 >OSI 7 Layer은, Open System Interconnection Reference Model의 줄임말로,  
-우리가 사용하는 네트워크의 구성을 7개의 계층으로 모듈화(표준화) 시켜 놓은 것을 말한다.
+우리가 사용하는 네트워크의 구성을 ISO에서 7개의 계층으로 모듈화(표준화) 시켜 놓은 것을 말한다.  
+이는 위에서 언급했듯이, __De Jure Standard__ 에 속한다. 
 
 ## Why we use OSI 7 Layer?
 >쉽게 예를 들어, 우리가 자동차를 고친다고 가정을 해보자.  
@@ -43,7 +69,12 @@ __Internet Protocol__ , 즉 __IP__ 가 이 계층에 속한다.
 TCP 나 UDP가 이 계층에 속한다.  
 
 ### Session Layer
->쉽게 생각하면, 채팅방을 생각하면 된다. 같은 세션끼리 연결하여 통신하는 것.
+>쉽게 생각하면, 채팅방을 생각하면 된다. 같은 세션끼리 연결하여 통신하는 것.  
+
 ### Presentation Layer
->데이터의 인코딩이나, 암호화를 담당하는 계층이다.
+>데이터의 인코딩이나, 암호화를 담당하는 계층이다.  
+
 ### Application Layer
+>파일 전송, 원격 접속, 전자 거래, 메시지 처리 및 교환 등의 실제 사용하는 기능들을 담당하는 계층이다.  
+
+![Heleeo](https://user-images.githubusercontent.com/71700079/110627684-9d362f80-81e5-11eb-9a40-0a5c31f2f516.png)
